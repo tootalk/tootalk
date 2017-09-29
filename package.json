@@ -1,0 +1,48 @@
+{
+  "name": "tootalk",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".tmp/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron -r babel-register .",
+    "watch": "babel --watch --out-dir .tmp src",
+    "build-css": "node-sass scss/styles.scss css/styles.css",
+    "watch-css": "node-sass -w scss/styles.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.o-in.dwango.co.jp/int1709-uk/tootalk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "bluebird": "^3.5.0",
+    "electron-builder": "^19.27.7",
+    "electron-json-storage": "^3.1.0",
+    "mastodon-api": "^1.3.0",
+    "material-ui": "^0.19.2",
+    "photon": "github:connors/photon",
+    "prismjs": "^1.8.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-player-controls": "^0.5.17",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.7.2",
+    "ws": "^3.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1"
+  }
+}
